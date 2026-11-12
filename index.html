@@ -252,8 +252,12 @@ footer{padding:80px 0 32px}
   .row .t{font-size:30px}
   .row h3{font-size:19px}
   .row p{display:none}
+  .row.dark p{display:block;font-size:13.5px;line-height:1.45}
+  .row.dark{min-height:0;gap:12px}
+  .row.dark h3{margin-top:14px}
   .row .top{flex-direction:column;align-items:flex-start;gap:6px}
-  .row .k{font-size:9.5px;letter-spacing:.14em}
+  .row .k{display:none}
+  .row .k.opt{display:block;font-size:9.5px;letter-spacing:.14em}
   .feat{padding:10px}
   .feat-in{height:520px;border-radius:22px}
   .feat-in h2{font-size:46px}
@@ -299,10 +303,10 @@ footer{padding:80px 0 32px}
 
 <header class="hero" id="topo">
   <div class="hero-in">
-    <img class="d" src="por-do-sol.jpg" alt="Mulheres de olhos fechados ao pôr do sol, num momento de pausa">
-    <video class="m" src="bsg-pranchas-mobile.mp4" poster="bsg-pranchas-poster.jpg" autoplay muted loop playsinline aria-label="Turma da Brasil Surf Girls sentada nas pranchas no mar, acenando"></video>
+    <picture><source media="(max-width: 900px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><img class="d" fetchpriority="high" src="por-do-sol.webp" alt="Mulheres de olhos fechados ao pôr do sol, num momento de pausa"></picture>
+    <video class="m" data-src="bsg-pranchas-leve.mp4" preload="none" poster="bsg-pranchas-poster.webp" autoplay muted loop playsinline aria-label="Turma da Brasil Surf Girls sentada nas pranchas no mar, acenando"></video>
     <nav class="hero-nav" aria-label="Principal">
-      <a class="wm" href="#topo"><img src="soranas-claro.png" alt="Soranas"><i>Experience</i></a>
+      <a class="wm" href="#topo"><img src="soranas-claro.webp" alt="Soranas"><i>Experience</i></a>
       <ul>
         <li><a href="#o-dia">O dia</a></li>
         <li><a href="#ingressos">Ingressos</a></li>
@@ -339,9 +343,9 @@ footer{padding:80px 0 32px}
   <div class="wrap">
     <div class="trio-head"><h2>Como é o <em>dia</em></h2><span class="cap muted">06.12 · Florianópolis</span></div>
     <div class="trio-g">
-      <div><div class="ph"><img src="surf-bsg-sorriso.jpg" alt="Aluna da Brasil Surf Girls de pé na prancha, sorrindo"></div><span class="n">01</span><h3>A vivência do surf</h3><p>Quem está começando faz aula com os instrutores da Brasil Surf Girls, com prancha inclusa. Quem já surfa aproveita uma sesh por conta própria, junto com as outras meninas que já são do mar.</p></div>
-      <div><div class="ph"><img src="sor-kit.jpg" alt="Caixa Soranas com vela, sal de banho e body splash"></div><span class="n">02</span><h3>O ritual Soranas</h3><p>Mesa de skincare, escalda-pés e um momento de relaxamento depois do mar, com mimos para levar para casa.</p></div>
-      <div><div class="ph"><img src="sor-meninas-bones.jpg" alt="As meninas da Soranas de boné, sorrindo com o body splash na mão" style="object-position:50% 35%"></div><span class="n">03</span><h3>Entre mulheres</h3><p>Brunch, conversa, fotos e a lojinha das marcas parceiras. À tarde, a festa no Graffi.</p></div>
+      <div><div class="ph"><img src="surf-bsg-sorriso.webp" alt="Aluna da Brasil Surf Girls de pé na prancha, sorrindo" loading="lazy" decoding="async"></div><span class="n">01</span><h3>A vivência do surf</h3><p>Quem está começando faz aula com os instrutores da Brasil Surf Girls, com prancha inclusa. Quem já surfa aproveita uma sesh por conta própria, junto com as outras meninas que já são do mar.</p></div>
+      <div><div class="ph"><img src="sor-kit.webp" alt="Caixa Soranas com vela, sal de banho e body splash" loading="lazy" decoding="async"></div><span class="n">02</span><h3>O ritual Soranas</h3><p>Mesa de skincare, escalda-pés e um momento de relaxamento depois do mar, com mimos para levar para casa.</p></div>
+      <div><div class="ph"><img src="sor-meninas-bones.webp" alt="As meninas da Soranas de boné, sorrindo com o body splash na mão" style="object-position:50% 35%" loading="lazy" decoding="async"></div><span class="n">03</span><h3>Entre mulheres</h3><p>Brunch, conversa, fotos e a lojinha das marcas parceiras. À tarde, a festa no Graffi.</p></div>
     </div>
   </div>
 </section>
@@ -356,18 +360,18 @@ footer{padding:80px 0 32px}
     <div class="prog-g">
       <div class="row"><div class="top"><span class="t">7h</span><span class="k">Incluso</span></div><h3>Recepção à beira-mar</h3><p>Boas-vindas e um café para acordar.</p></div>
       <div class="row"><div class="top"><span class="t">7h30</span><span class="k">Incluso</span></div><h3>Imersão no surf</h3><p>O primeiro contato com o mar, junto com a turma da Brasil Surf Girls.</p></div>
-      <div class="row"><div class="top"><span class="t">8h</span><span class="k">Opcional</span></div><h3>Aula de surf</h3><p>Com os instrutores da Brasil Surf Girls, para quem escolheu a experiência com surf.</p></div>
+      <div class="row"><div class="top"><span class="t">8h</span><span class="k opt">Opcional</span></div><h3>Aula de surf</h3><p>Com os instrutores da Brasil Surf Girls, para quem escolheu a experiência com surf.</p></div>
       <div class="row"><div class="top"><span class="t">8h30</span><span class="k">Incluso</span></div><h3>Brunch</h3><p>Uma mesa farta depois do mar, servida durante toda a manhã.</p></div>
       <div class="row"><div class="top"><span class="t">9h</span><span class="k">Incluso</span></div><h3>Ritual sensorial Soranas</h3><p>Skincare, escalda-pés e relaxamento.</p></div>
       <div class="row"><div class="top"><span class="t">10h</span><span class="k">Incluso</span></div><h3>Espaço livre</h3><p>Conversas, fotos, a lojinha e o brunch ainda servido.</p></div>
-      <div class="row dark span2"><div class="top"><span class="t">Tarde</span><span class="k">Incluso</span></div><h3>Festa no Graffi</h3><p>A celebração continua à beira-mar.</p></div>
+      <div class="row dark span2"><div class="top"><span class="t">Tarde</span><span class="k opt">Acesso VIP</span></div><h3>Festa no Graffi</h3><p>Uma festa à beira-mar que reúne a comunidade do surf de Florianópolis, aberta ao público. Para quem está na experiência, a entrada é VIP e não custa nada.</p></div>
     </div>
   </div>
 </section>
 
 <div class="feat">
   <div class="feat-in ph">
-    <img src="surf-comemorando.jpg" alt="Aluna comemorando de pé na prancha">
+    <img src="surf-comemorando.webp" alt="Aluna comemorando de pé na prancha" loading="lazy" decoding="async">
     <div class="c">
       <span class="cap">Brasil Surf Girls</span>
       <h2>A primeira onda <em>a gente não esquece</em></h2>
@@ -375,9 +379,9 @@ footer{padding:80px 0 32px}
     </div>
   </div>
   <div class="strip">
-    <div class="ph"><img src="surf-pulo.jpg" alt="Aluna pulando da prancha de braços abertos"></div>
-    <div class="ph"><img src="grupo-bsg.jpg" alt="Turma da Brasil Surf Girls comemorando na areia" style="object-position:50% 30%"></div>
-    <div class="ph"><img src="aula-areia.jpg" alt="Alunas treinando a remada na areia"></div>
+    <div class="ph"><img src="surf-pulo.webp" alt="Aluna pulando da prancha de braços abertos" loading="lazy" decoding="async"></div>
+    <div class="ph"><img src="grupo-bsg.webp" alt="Turma da Brasil Surf Girls comemorando na areia" style="object-position:50% 30%" loading="lazy" decoding="async"></div>
+    <div class="ph"><img src="aula-areia.webp" alt="Alunas treinando a remada na areia" loading="lazy" decoding="async"></div>
   </div>
 </div>
 
@@ -388,18 +392,18 @@ footer{padding:80px 0 32px}
     </div>
     <div class="tk-g">
       <article class="tk">
-        <div class="ph"><img src="abraco-grama.jpg" alt="Duas mulheres se abraçando no gramado, com uma prancha ao lado"><span class="chip">1º lote</span></div>
+        <div class="ph"><img src="abraco-grama.webp" alt="Duas mulheres se abraçando no gramado, com uma prancha ao lado" loading="lazy" decoding="async"><span class="chip">1º lote</span></div>
         <div class="tk-b">
           <div class="tk-top"><div><h3>Experiência</h3><p class="muted">A manhã completa, sem a aula de surf.</p></div><div class="pr">R$ 297<small>por pessoa</small></div></div>
-          <ul><li>Imersão no surf</li><li>Ritual sensorial Soranas</li><li>Brunch</li><li>Mimos Soranas para levar</li><li>Espaço livre e lojinha</li><li>Festa à tarde</li></ul>
+          <ul><li>Imersão no surf</li><li>Ritual sensorial Soranas</li><li>Brunch</li><li>Mimos Soranas para levar</li><li>Espaço livre e lojinha</li><li>Acesso VIP à festa no Graffi</li></ul>
           <a class="btn" href="https://mpago.li/1Ufoe88">Garantir minha vaga <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
         </div>
       </article>
       <article class="tk dark">
-        <div class="ph"><img src="bsg-prancha.jpg" alt="Surfista da Brasil Surf Girls apoiada na prancha dentro do mar"><span class="chip">1º lote · mais completa</span></div>
+        <div class="ph"><img src="bsg-prancha.webp" alt="Surfista da Brasil Surf Girls apoiada na prancha dentro do mar" loading="lazy" decoding="async"><span class="chip">1º lote · mais completa</span></div>
         <div class="tk-b">
           <div class="tk-top"><div><h3>Experiência <em>+ surf</em></h3><p class="muted">A manhã completa, começando dentro do mar.</p></div><div class="pr">R$ 437<small>por pessoa</small></div></div>
-          <ul><li>Aula com a Brasil Surf Girls</li><li>Prancha inclusa</li><li>Tudo da Experiência</li><li>Festa à tarde</li></ul>
+          <ul><li>Aula com a Brasil Surf Girls</li><li>Prancha inclusa</li><li>Tudo da Experiência</li><li>Acesso VIP à festa no Graffi</li></ul>
           <a class="btn light" href="https://mpago.la/2n41nSq">Garantir com surf <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
         </div>
       </article>
@@ -410,7 +414,7 @@ footer{padding:80px 0 32px}
 <section class="stay" id="hospedagem">
   <div class="wrap stay-g">
     <div class="show" aria-roledescription="carrossel" aria-label="Acomodações do Graffi Beach Hostel">
-      <div class="slide on"><img src="barra-da-lagoa-barra-da-lagoa-1.jpg" alt="Suíte para 2 pessoas, Barra da Lagoa · vista para o mar"></div><div class="slide"><img src="moc-1.jpg" alt="Suíte para 2 pessoas, Moçambique · vista para o mar" loading="lazy"></div><div class="slide"><img src="naufragados-painel.jpg" alt="Quarto compartilhado, Naufragados · misto, com vista para o mar" loading="lazy"></div><div class="slide"><img src="morro-das-pedras-morro-das-pedras-3.jpg" alt="Suíte para até 4 pessoas, Morro das Pedras · vista para o mar" loading="lazy"></div><div class="slide"><img src="campeche-campeche-2.jpg" alt="Suíte master para 2 pessoas, Campeche · vista para o mar e a mata" loading="lazy"></div><div class="slide"><img src="joaquina-painel.jpg" alt="Quarto compartilhado feminino, Joaquina · só para mulheres" loading="lazy"></div><div class="slide"><img src="galheta-g03.jpg" alt="Suíte para até 3 pessoas, Galheta · andar de cima, com o mar ao abrir a porta" loading="lazy"></div>
+      <div class="slide on"><img src="barra-da-lagoa-barra-da-lagoa-1.webp" alt="Suíte para 2 pessoas, Barra da Lagoa · vista para o mar" loading="lazy" decoding="async"></div><div class="slide"><img src="moc-1.webp" alt="Suíte para 2 pessoas, Moçambique · vista para o mar" loading="lazy"></div><div class="slide"><img src="naufragados-painel.webp" alt="Quarto compartilhado, Naufragados · misto, com vista para o mar" loading="lazy"></div><div class="slide"><img src="morro-das-pedras-morro-das-pedras-3.webp" alt="Suíte para até 4 pessoas, Morro das Pedras · vista para o mar" loading="lazy"></div><div class="slide"><img src="campeche-campeche-2.webp" alt="Suíte master para 2 pessoas, Campeche · vista para o mar e a mata" loading="lazy"></div><div class="slide"><img src="joaquina-painel.webp" alt="Quarto compartilhado feminino, Joaquina · só para mulheres" loading="lazy"></div><div class="slide"><img src="galheta-g03.webp" alt="Suíte para até 3 pessoas, Galheta · andar de cima, com o mar ao abrir a porta" loading="lazy"></div>
       <div class="show-dots"><span class="on"></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span><span class=""></span></div>
       <div class="show-cap">
         <div><h3 id="show-n">Suíte para 2 pessoas</h3><span id="show-i">Barra da Lagoa · vista para o mar</span></div>
@@ -434,16 +438,16 @@ footer{padding:80px 0 32px}
   <div class="wrap">
     <div class="who-head"><h2>Quem faz <em>acontecer</em></h2><p>Três marcas, um encontro.</p></div>
     <div class="who-g">
-      <div><div class="ph"><img src="sor-meninas.jpg" alt="As meninas da Soranas sorrindo atrás da mesa de produtos"></div><h3>Soranas</h3><p>Quem idealizou e realiza a Soranas Experience. Marca 100% natural e orgânica, com cosméticos de ativos botânicos e aromaterapia, que criou este encontro para unir o mar e o autocuidado. Conduz o ritual e cuida de cada detalhe do dia.</p></div>
-      <div><div class="ph"><img src="grupo-bsg.jpg" alt="Turma da Brasil Surf Girls na areia" style="object-position:50% 35%"></div><h3>Brasil Surf Girls</h3><p>Mais que uma marca, um movimento. Nasceu para popularizar o surf entre mulheres, de todas as idades e histórias, e virou uma grande comunidade de mulheres incríveis em uma relação única com o mar. Parceira oficial, conduz a aula de surf.</p></div>
-      <div><div class="ph"><img src="graffi-brinde.jpg" alt="Amigos brindando de frente para o mar no Graffi Beach Hostel" style="object-position:50% 62%"></div><h3>Graffi Beach Hostel</h3><p>Hostel pé na areia que reúne gente de todo canto em Florianópolis. Recebe a experiência de braços abertos, com hospedagem de frente para o mar e a festa que continua depois do meio-dia.</p></div>
+      <div><div class="ph"><img src="sor-meninas.webp" alt="As meninas da Soranas sorrindo atrás da mesa de produtos" loading="lazy" decoding="async"></div><h3>Soranas</h3><p>Quem idealizou e realiza a Soranas Experience. Marca 100% natural e orgânica, com cosméticos de ativos botânicos e aromaterapia, que criou este encontro para unir o mar e o autocuidado. Conduz o ritual e cuida de cada detalhe do dia.</p></div>
+      <div><div class="ph"><img src="grupo-bsg.webp" alt="Turma da Brasil Surf Girls na areia" style="object-position:50% 35%" loading="lazy" decoding="async"></div><h3>Brasil Surf Girls</h3><p>Mais que uma marca, um movimento. Nasceu para popularizar o surf entre mulheres, de todas as idades e histórias, e virou uma grande comunidade de mulheres incríveis em uma relação única com o mar. Parceira oficial, conduz a aula de surf.</p></div>
+      <div><div class="ph"><img src="graffi-brinde.webp" alt="Amigos brindando de frente para o mar no Graffi Beach Hostel" style="object-position:50% 62%" loading="lazy" decoding="async"></div><h3>Graffi Beach Hostel</h3><p>Hostel pé na areia que reúne gente de todo canto em Florianópolis. Recebe a experiência de braços abertos, com hospedagem de frente para o mar e a festa que continua depois do meio-dia.</p></div>
     </div>
   </div>
 </section>
 
 <div class="close">
   <div class="close-in ph">
-    <img src="surf-onda.jpg" alt="Mulher surfando uma onda pequena">
+    <img src="surf-onda.webp" alt="Mulher surfando uma onda pequena" loading="lazy" decoding="async">
     <div class="c">
       <span class="cap">Domingo · 6 de dezembro</span>
       <h2>Te esperamos <em>no mar</em></h2>
@@ -472,7 +476,7 @@ footer{padding:80px 0 32px}
 
 <footer>
   <div class="wrap">
-    <p class="big-wm"><img src="soranas-escuro.png" alt="Soranas"><em>Experience</em></p>
+    <p class="big-wm"><img src="soranas-escuro.webp" alt="Soranas"><em>Experience</em></p>
     <div class="foot"><span>Soranas · Brasil Surf Girls · Graffi Beach Hostel</span><span>Florianópolis · 06.12</span></div>
   </div>
 </footer>
@@ -486,5 +490,6 @@ function go(k){i=(k+S.length)%S.length;sl.forEach(function(e,j){e.classList.togg
 function auto(){clearInterval(t);t=setInterval(function(){go(i+1)},4500)}
 box.querySelectorAll('[data-go]').forEach(function(b){b.addEventListener('click',function(){go(i+parseInt(b.getAttribute('data-go')));auto();})});auto();})();
 </script>
+<script>(function(){var v=document.querySelector("video.m[data-src]");if(v&&window.matchMedia("(max-width: 900px)").matches){v.src=v.getAttribute("data-src");v.play&&v.play().catch(function(){});}})();</script>
 </body>
 </html>
