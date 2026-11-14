@@ -296,6 +296,30 @@ footer{padding:80px 0 32px}
 </style>
 
 <style>body{margin:0}html,body{overflow-x:clip}#rooms-list{display:contents}</style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '826724149979272');
+fbq('track', 'PageView');
+/* Cliques nos links de pagamento (Mercado Pago) e no WhatsApp */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;
+  var h=a.getAttribute('href')||'';
+  if(/^https?:\/\/(www\.)?mpago\.(li|la)\//.test(h)){
+    var v=parseFloat(a.getAttribute('data-fb-value'))||0;
+    fbq('track','InitiateCheckout',{value:v,currency:'BRL',content_name:a.getAttribute('data-fb-name')||'Soranas Experience',content_category:'Soranas Experience',num_items:1});
+  }else if(/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//.test(h)){
+    fbq('track','Contact');
+  }
+},true);
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 
@@ -396,7 +420,7 @@ footer{padding:80px 0 32px}
         <div class="tk-b">
           <div class="tk-top"><div><h3>Experiência</h3><p class="muted">A manhã completa, sem a aula de surf.</p></div><div class="pr">R$ 297<small>por pessoa</small></div></div>
           <ul><li>Imersão no surf</li><li>Ritual sensorial Soranas</li><li>Brunch</li><li>Mimos Soranas para levar</li><li>Espaço livre e lojinha</li><li>Acesso VIP à festa no Graffi</li></ul>
-          <a class="btn" href="https://mpago.li/1Ufoe88">Garantir minha vaga <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="btn" href="https://mpago.li/1Ufoe88" data-fb-value="297" data-fb-name="Experiência">Garantir minha vaga <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
         </div>
       </article>
       <article class="tk dark">
@@ -404,7 +428,7 @@ footer{padding:80px 0 32px}
         <div class="tk-b">
           <div class="tk-top"><div><h3>Experiência <em>+ surf</em></h3><p class="muted">A manhã completa, começando dentro do mar.</p></div><div class="pr">R$ 437<small>por pessoa</small></div></div>
           <ul><li>Aula com a Brasil Surf Girls</li><li>Prancha inclusa</li><li>Tudo da Experiência</li><li>Acesso VIP à festa no Graffi</li></ul>
-          <a class="btn light" href="https://mpago.la/2n41nSq">Garantir com surf <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+          <a class="btn light" href="https://mpago.la/2n41nSq" data-fb-value="437" data-fb-name="Experiência + surf">Garantir com surf <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
         </div>
       </article>
     </div>
