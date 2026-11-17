@@ -293,6 +293,31 @@ footer{padding:80px 0 32px}
   footer{padding:56px 0 28px}
   .foot{flex-direction:column;align-items:center;gap:6px;text-align:center}
 }
+/* PARCEIRAS */
+#parceiras{padding-bottom:40px}
+.prog-tip{display:block;margin-top:10px;font-size:14px;color:var(--muted)}
+.kit-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.kit-g .ph{aspect-ratio:1/1;border-radius:4px;margin-bottom:22px;position:relative;overflow:hidden}
+.kit-g .ph img{width:100%;height:100%;object-fit:cover}
+.kit-g .ph .lg{position:absolute;top:auto;right:auto;left:14px;bottom:14px;width:64px;height:64px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.25);background:#fff}
+.kit-g .tile{display:grid;place-items:center;background:var(--sand)}
+.kit-g .ph.tile img{position:absolute;inset:0;margin:auto;width:58%;height:auto;object-fit:contain}
+.kit-g .ilus{position:absolute;right:12px;bottom:12px;padding:5px 10px;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;font-size:10.5px;font-weight:600;letter-spacing:.08em}
+.kit-g h3{font-size:28px;margin-bottom:2px}
+.kit-g .ig{display:block;font-size:13px;color:var(--terra);margin-bottom:10px}
+.kit-g .sub{display:block;font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
+.kit-g p{color:var(--muted);font-size:15.5px}
+.kit-g ul{list-style:none;margin-top:10px}
+.kit-g li{padding:9px 0;border-top:1px solid var(--line);font-size:15px}
+.kit-sorteio{margin-top:36px;text-align:center;font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink)}
+.kit-sorteio em{color:var(--terra)}
+@media (max-width:900px){
+  .kit-g{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px;scrollbar-width:none}
+  .kit-g::-webkit-scrollbar{display:none}
+  .kit-g > div{flex:0 0 78%;scroll-snap-align:start}
+  .kit-g h3{font-size:26px}
+  .kit-sorteio{font-size:20px;margin-top:24px}
+}
 /* URGÊNCIA · 1º lote */
 .lote{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin:-24px 0 32px;padding:22px 28px;border-radius:20px;background:var(--ink);color:var(--bg)}
 .lote .cap{color:var(--peach);display:block;margin-bottom:6px}
@@ -391,7 +416,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
     <div class="trio-head"><h2>Como é o <em>dia</em></h2><span class="cap muted">06.12 · Florianópolis</span></div>
     <div class="trio-g">
       <div><div class="ph"><img src="site-soranas-completo/surf-bsg-sorriso.webp" alt="Aluna da Brasil Surf Girls de pé na prancha, sorrindo" loading="lazy" decoding="async"></div><span class="n">01</span><h3>A vivência do surf</h3><p>Quem está começando faz aula com os instrutores da Brasil Surf Girls, com prancha inclusa. Quem já surfa aproveita uma sesh por conta própria, junto com as outras meninas que já são do mar.</p></div>
-      <div><div class="ph"><img src="site-soranas-completo/sor-kit.webp" alt="Caixa Soranas com vela, sal de banho e body splash" loading="lazy" decoding="async"></div><span class="n">02</span><h3>O ritual Soranas</h3><p>Mesa de skincare, escalda-pés e um momento de relaxamento depois do mar, com mimos para levar para casa.</p></div>
+      <div><div class="ph"><img src="site-soranas-completo/sor-kit.webp" alt="Caixa Soranas com vela, sal de banho e body splash" loading="lazy" decoding="async"></div><span class="n">02</span><h3>O ritual Soranas</h3><p>Mesa de skincare, escalda-pés e um momento de relaxamento depois do mar, com um minikit Soranas para levar para casa.</p></div>
       <div><div class="ph"><img src="site-soranas-completo/sor-meninas-bones.webp" alt="As meninas da Soranas de boné, sorrindo com o body splash na mão" style="object-position:50% 35%" loading="lazy" decoding="async"></div><span class="n">03</span><h3>Entre mulheres</h3><p>Brunch, conversa, fotos e a lojinha das marcas parceiras. À tarde, a festa no Graffi.</p></div>
     </div>
   </div>
@@ -402,7 +427,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
     <span class="cap" style="color:var(--terra);display:block;margin-bottom:22px">Programação</span>
     <div class="prog-head">
       <h2>Uma manhã <em>sem pressa</em></h2>
-      <p>Domingo, 6 de dezembro, no Graffi Beach Hostel, de frente para o mar. Quem fica hospedada faz check-in no sábado.</p>
+      <p>Domingo, 6 de dezembro, das 7h ao meio-dia, no Graffi Beach Hostel (Rua Aroeira do Campo, 25B, Campeche, Florianópolis), de frente para o mar. Quem fica hospedada faz check-in no sábado.<span class="prog-tip">Sem estacionamento próprio: estacione na rua, no bairro.</span></p>
     </div>
     <div class="prog-g">
       <div class="row"><div class="top"><span class="t">7h</span><span class="k">Incluso</span></div><h3>Recepção à beira-mar</h3><p>Boas-vindas e um café para acordar.</p></div>
@@ -411,7 +436,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
       <div class="row"><div class="top"><span class="t">8h30</span><span class="k">Incluso</span></div><h3>Brunch</h3><p>Uma mesa farta depois do mar, servida durante toda a manhã.</p></div>
       <div class="row"><div class="top"><span class="t">9h</span><span class="k">Incluso</span></div><h3>Ritual sensorial Soranas</h3><p>Skincare, escalda-pés e relaxamento.</p></div>
       <div class="row"><div class="top"><span class="t">10h</span><span class="k">Incluso</span></div><h3>Espaço livre</h3><p>Conversas, fotos, a lojinha e o brunch ainda servido.</p></div>
-      <div class="row dark span2"><div class="top"><span class="t">Tarde</span><span class="k opt">Acesso VIP</span></div><h3>Festa no Graffi</h3><p>Uma festa à beira-mar que reúne a comunidade do surf de Florianópolis, aberta ao público. Para quem está na experiência, a entrada é VIP e não custa nada.</p></div>
+      <div class="row dark span2"><div class="top"><span class="t">14h às 22h</span><span class="k opt">Acesso VIP</span></div><h3>Festa no Graffi</h3><p>Uma festa à beira-mar que reúne a comunidade do surf de Florianópolis, aberta ao público. Para quem está na experiência, a entrada é VIP e não custa nada.</p></div>
     </div>
   </div>
 </section>
@@ -432,6 +457,18 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
   </div>
 </div>
 
+<section id="parceiras">
+  <div class="wrap">
+    <div class="who-head"><h2>Mimos que cada participante <em>leva para casa</em></h2><p>Presentes da Soranas e das marcas parceiras, escolhidos para a experiência continuar depois da manhã.</p></div>
+    <div class="kit-g">
+      <div><div class="ph"><img src="site-soranas-completo/sor-kit.webp" alt="Caixa Soranas com produtos (foto ilustrativa)" loading="lazy" decoding="async"><span class="ilus">Foto ilustrativa</span></div><span class="sub">Minikit</span><h3>Soranas</h3><span class="ig">@soranasbr</span><p>Miniaturas para continuar o ritual em casa:</p><ul><li>Sérum blend de vitaminas <b>· lançamento</b></li><li>Body splash Lavita</li><li>Sabonete de argila amarela</li><li>Protetor solar</li></ul></div>
+      <div><div class="ph"><img src="site-soranas-completo/parc-amarradona.webp" alt="Bolsa de crochê de praia em tons de azul e dourado da Amarradona" loading="lazy" decoding="async"><img class="lg" src="site-soranas-completo/logo-amarradona.webp" alt="Amarradona Crochê de Praia" loading="lazy"><span class="ilus">Foto ilustrativa</span></div><span class="sub">Presente</span><h3>Amarradona</h3><span class="ig">@amarradonacroche</span><p>Crochê de praia feito à mão. Cada participante ganha uma sandália de pés descalços de crochê.</p></div>
+      <div><div class="ph"><img src="site-soranas-completo/parc-crispe.webp" alt="Pacotes de granola artesanal Crispê" loading="lazy" decoding="async"><img class="lg" src="site-soranas-completo/logo-crispe.webp" alt="Crispê Granolas Artesanais" loading="lazy"><span class="ilus">Foto ilustrativa</span></div><span class="sub">Presente</span><h3>Crispê</h3><span class="ig">@crispe.granolas</span><p>Granolas artesanais. Cada participante leva uma amostra de granola.</p></div>
+      <div><div class="ph"><img src="site-soranas-completo/parc-hyu.webp" alt="Latas de bebida proteica HYU em vários sabores" loading="lazy" decoding="async"><img class="lg" src="site-soranas-completo/logo-hyu.webp" alt="HYU Drinks" loading="lazy"><span class="ilus">Foto ilustrativa</span></div><span class="sub">Degustação</span><h3>HYU Drinks</h3><span class="ig">@hyudrinks</span><p>Bebida proteica em lata, com 15g de proteína e zero açúcar. Durante a manhã, tem degustação para você provar os sabores.</p></div>
+    </div>
+    <p class="kit-sorteio">E ainda tem <em>sorteio</em> de presentes das marcas parceiras.</p>
+  </div>
+</section>
 <section id="ingressos">
   <div class="wrap">
     <div class="head">
@@ -446,7 +483,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
         <div class="ph"><img src="site-soranas-completo/abraco-grama.webp" alt="Duas mulheres se abraçando no gramado, com uma prancha ao lado" loading="lazy" decoding="async"><span class="chip">1º lote</span></div>
         <div class="tk-b">
           <div class="tk-top"><div><h3>Experiência</h3><p class="muted">A manhã completa, sem a aula de surf.</p></div><div class="pr">R$ 297<small>por pessoa</small></div></div>
-          <ul><li>Imersão no surf</li><li>Ritual sensorial Soranas</li><li>Brunch</li><li>Mimos Soranas para levar</li><li>Espaço livre e lojinha</li><li>Acesso VIP à festa no Graffi</li></ul>
+          <ul><li>Imersão no surf</li><li>Ritual sensorial Soranas</li><li>Brunch</li><li>Minikit Soranas, presentes e degustação das parceiras</li><li>Espaço livre e lojinha</li><li>Acesso VIP à festa no Graffi</li></ul>
           <a class="btn" href="https://mpago.li/1Ufoe88" data-fb-value="297" data-fb-name="Experiência">Garantir minha vaga <span class="ar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF5EC" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
           <p class="tk-safe">Pix ou cartão · cancelamento grátis em até 7 dias</p>
         </div>
@@ -483,7 +520,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
     </div>
   </div>
   <div class="wrap">
-    <p class="tk-note"><span class="cap">1º lote até 20/11</span> · Vagas limitadas para manter a manhã intimista. Pix ou cartão.<br>Depois de pagar, envie o comprovante no WhatsApp para receber sua confirmação.</p>
+    <p class="tk-note"><span class="cap">1º lote até 20/11</span> · Só 40 vagas, para manter a manhã intimista. Pix ou cartão.<br>Depois de pagar, envie o comprovante no WhatsApp para receber sua confirmação.</p>
   </div>
 </section>
 
@@ -517,7 +554,7 @@ src="https://www.facebook.com/tr?id=826724149979272&ev=PageView&noscript=1"/></n
     </div>
     <div class="faq-l">
       <details><summary>Preciso saber surfar?</summary><p>Não. A imersão no mar é para todas. A aula, para iniciantes, é opcional: com os instrutores da Brasil Surf Girls e prancha inclusa.</p></details>
-      <details><summary>Posso ir sozinha?</summary><p>Claro! A maioria vem sozinha e sai com amigas novas.</p></details>
+      <details><summary>Posso ir sozinha?</summary><p>Claro! Muitas mulheres vêm sozinhas, e a manhã é pensada para você se enturmar.</p></details>
       <details><summary>Já surfo. Posso levar minha prancha?</summary><p>Pode. Escolha a experiência sem aula e aproveite o mar no seu ritmo.</p></details>
       <details><summary>Posso cancelar?</summary><p>Sim, em até 7 dias após a compra, com reembolso integral, desde que o pedido seja feito até sexta-feira, 4/12. Depois disso não há reembolso, mas você pode transferir sua vaga para outra pessoa: é só avisar a gente pelo WhatsApp até a véspera. Se o evento for remarcado ou cancelado pela organização, você escolhe entre a nova data ou o reembolso integral.</p></details>
       <details><summary>O que levar?</summary><p>Roupa de banho, protetor solar, toalha e uma muda de roupa.</p></details>
